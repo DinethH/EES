@@ -1,0 +1,142 @@
+<?php 
+include "../template/header.php"; 
+include "../../../includes/db.php"; 
+
+?>
+<style>
+#pub {
+	background:#FFF;
+}
+#pub , #pub1 {
+	padding:10px;
+	border-radius:5px;
+}
+h3 {
+	font-size:22px;
+	font-weight:bold;
+	color:#666;
+	text-shadow:1px 1px 1px #FFF;
+	width:100px;
+	margin-right:20px;
+	background-color:#FFC;
+	border-radius:3px;
+	box-shadow:1px 1px 1px #666666;
+	padding:5px;
+}
+h3:hover {
+	box-shadow:1px 1px 1px #999;
+	background-color:#FFF;
+}
+
+
+
+</style>
+<h5 class="currentBar">Home &raquo; Publications</h5>
+
+<section style="width:960px;">
+<h2 class="grayB" style="margin:0">Publications</h2><br>
+
+
+<?php
+
+	$sql = "SELECT year FROM _basu_publications";
+	$results = mysql_query($sql);
+	$years = array();
+	while ($row = mysql_fetch_array($results)) {
+		array_push($years, $row['year']);
+	}
+	$unique_years = array_unique($years);
+	arsort($unique_years);
+	
+	$decades = array(1970=>"0",
+						1980=>"0",
+						1990=>"0",
+						2000=>"0",
+						2010=>"0",
+						2020=>"0",
+						2030=>"0");
+						
+	foreach ($unique_years as $y) {
+		if ($y >= 1970 && $y <= 1979) {
+			$decades[1970]="1";
+		}
+		elseif ($y >= 1980 && $y <= 1989) {
+			$decades[1980]="1";
+		}
+		elseif ($y >= 1990 && $y <= 1999) {
+			$decades[1990]="1";
+		}
+		elseif ($y >= 2000 && $y <= 2009) {
+			$decades[2000]="1";
+		}
+		elseif ($y >= 2010 && $y <= 2019) {
+			$decades[2010]="1";
+		}
+		if ($y >= 2020 && $y <= 2029) {
+			$decades[2020]="1";
+		}
+	}
+	krsort($decades);
+	
+	
+	echo '<div style="text-align:right">';
+	foreach ($decades as $key => $value) {
+		if ($value == 1) {
+			?>
+            	<a href="#<?php echo substr($key, 0, 3); ?>"><h3><?php echo $key; ?></h3><span><?php ?></span></a>
+            <?php
+		}
+	}
+	echo '</div>';
+?>
+
+
+
+<?php foreach ($unique_years as $year) { echo "<a name=\"".substr($year, 0, 3)."\"><br /><h2>".$year."</h2><a>"; ?>
+
+
+<?php
+	$sql2 = "SELECT * FROM _basu_publications WHERE year=$year";
+	$results2 = mysql_query($sql2);
+	$i = 1;
+	while ($row = mysql_fetch_array($results2)) {
+		if  ($i%2==0) {
+			echo "<div id='pub1'><p>".$row['desc']."";
+			if (strlen($row['pdf']) > 0) {
+				echo strpos($row['pdf'], "http");
+				if (strpos($row['pdf'], "http") > 0) {
+					echo "<a target='_blank' class='tooltip' href='ggg".$row['pdf']."' >	";
+
+				} else {
+					echo "<a class='tooltip' href='../assets/publications/".$row['pdf'].".pdf' >	";
+				}
+				
+			
+				echo "<img width='20' src='../images/pdf.png'/></a></p></div>";
+			}
+			else {
+				echo "</p></div>";
+			}
+		}
+		else {
+			echo "<div id='pub'><p>".$row['desc']."";
+			if (strlen($row['pdf']) > 0) {
+				echo "<a href='../assets/publications/".$row['pdf'].".pdf' ><img width='20' src='../images/pdf.png'/></a></p></div>";
+			}
+			else {
+				echo "</p></div>";
+			}
+		}
+		$i++;
+	}
+?>
+
+
+<?php } ?></h2>
+
+
+<table width='960'><td align='right' class=''><a style='font-size:12px; font-weight:bold;' href='#top'>BACK TO TOP</a></table>
+    
+</section>
+
+<?php include "../template/footer.php"; ?>

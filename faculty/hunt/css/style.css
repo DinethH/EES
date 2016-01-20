@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background: #3b3b3b top center repeat-x url(../../../images/backgroundBW.jpg);
+}
+.currentBar {
+	text-align:left; 
+	margin:0; 
+	padding-top:10px; 
+	padding-left:10px; 
+	color:#666; 
+	text-shadow:1px 1px 1px #FFFFFF; 
+	font-weight:normal; 
+	font-size:14px
+}
+.main {
+	margin:20px;
+}

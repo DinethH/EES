@@ -1,0 +1,8 @@
+<style>
+p	{
+	line-height:24px;
+}
+</style>
+<h6>Luminant Environmental Research Fellowships</h6>
+<p>Luminant, the major electric power generating utility in North Central Texas, awards research fellowships to masters and Ph.D. students on a competitive basis. These awards are made to students whose thesis or dissertation research is focused on assessment, control or abatement of the environmental impacts of Luminant operations including strip mining, thermal effluents, and reclamation of mined lands. In order to apply, a student must be accepted into the laboratory of a supervising professor and present a minimum combined GRE score of 1100. Students are required to submit a detailed research proposal to a review committee that is made up of environmental scientists from academic and research institutions in Texas and surrounding states. The fellowship provides a competitive monthly stipend, funds to support graduate research and travel funds to scientific meetings. Two years of funding are offered to masters students and three years of funding to Ph.D. students. Funding periods may be extended with approval of the Luminant review committee. Fellowship funds are administered by the student&rsquo;s supervising professor. Proposals are accepted throughout the year. However, they must be received no later than April 1, July 1 and November 1 to be considered by the review committee at its spring, summer and winter meetings, respectively. The application instructions are available from the Director of the Program in Environmental and Earth Sciences. Students interested in applying are encouraged to discuss this with their major professor and the program advisor as they begin to work on the proposal.</p>
+<br />

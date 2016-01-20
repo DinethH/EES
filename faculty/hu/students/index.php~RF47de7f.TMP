@@ -1,0 +1,83 @@
+<?php 
+include "../template/header.php";
+include "../includes/db.php"; 
+if (!isset($_GET['i'])) {
+	$_GET['i'] = 'members';
+}
+
+?>
+<h5 class="currentBar">Home &raquo; Current &amp; Past Students</h5>
+
+
+<script type="text/javascript"
+	src="../../../js/trip_slide.js"></script>
+    
+<script type="text/javascript">    
+<!--
+  var viewer = new PhotoViewer();
+  viewer.add('../images/group/current/group-2011.jpg');
+  viewer.add('../images/group/current/christina.jpg');
+  viewer.add('../images/group/current/erika.jpg');
+  viewer.add('../images/group/current/bbq.jpg');
+  viewer.add('../images/group/current/cheng.jpg');
+  viewer.add('../images/group/current/jia.jpg');
+  viewer.add('../images/group/current/philip.jpg');
+  viewer.add('../images/group/current/rob.jpg');
+  viewer.add('../images/group/current/sheng.jpg');
+  viewer.add('../images/group/current/shoi.jpg');
+  viewer.add('../images/group/current/steven.jpg');
+  viewer.add('../images/group/current/toru.jpg');
+  viewer.add('../images/group/current/zhi.jpg');
+  viewer.add('../images/group/current/Gao conducts batch sorption tests.jpg');
+  viewer.add('../images/group/current/Gordon guest-lectures Hydrogeology course.jpg');
+  viewer.add('../images/group/current/Group members in Oct 2009.jpg');
+  viewer.add('../images/group/current/Ian & Rob work with imbibition.jpg');
+  viewer.add('../images/group/current/Liu is exams the imbibition of shale.jpg');
+  viewer.add('../images/group/current/Pukar conducts imbibition test.jpg');
+  viewer.add('../images/group/current/Ray prepares samples for ICP-MS analyses.jpg');
+  viewer.add('../images/group/current/Sun Guoxin uses LC-ICP-MS for arsenic studies.jpg');
+//--></script>
+<section style="width:960px">
+
+   
+  <h2 style="margin:0" class="grayB">Students</h2><br />
+
+
+    
+    <a href="?i=members"><h3 style="margin-left:0px;" class="button white">Members</h3></a>
+    <a href="?i=photos"><h3 class="button white">Photos</h3></a>
+    
+  <br>
+<br>
+
+
+
+
+    <?php if (isset($_GET['i']) && $_GET['i']=='members') { ?>
+  <h3 class="news">Current Research Group Members</h3>
+
+        
+
+
+  <h3 class="news">Past Graduate Students</h3>
+  
+  
+  <h3 class="news">Past Post-Doctoral Researchers</h3>
+  		
+  
+  <h3 class="news">Past Visiting Researchers</h3>
+    	
+        
+  <h3 class="news">Past Undergraduate Students </h3>
+        	
+        
+  <h3 class="news">Past High-School Students  </h3>
+        
+    
+    <?php }  elseif (isset($_GET['i']) && $_GET['i']=='photos') {
+		include("photos.php");
+		} ?>
+    
+</section>
+
+<?php include "../template/footer.php"; ?>

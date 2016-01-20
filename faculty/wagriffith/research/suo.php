@@ -1,0 +1,25 @@
+<div><br />
+<strong><em>Award #:</em></strong><em>CDC/NIOSH 7R03OH010112-02</em> <br />
+  <strong><em>Title:</em></strong><em> Incorporating topographic stress perturbations and  geological structures into stability forecasting in underground mines.</em> <br />
+  <strong>PI  &amp; Co-PIs:</strong> W.A. Griffith (PI) &amp; Ernian Pan, University of Akron  (co-PI)<br />
+  <strong>Funding  Agency:</strong><em>National Institute for Occupational Safety and Health (CDC)</em> <br />
+  <strong>Duration:</strong> 09/01/2012-8/31/2014
+</div>
+
+<div><p>Of the 77 reported fatalities in underground  coal mines nationwide from 2007-2011, 26 were a result of roof or rib falls  (MSHA, 2011), and a large percentage of roof falls in underground mines in the  Appalachian Plateau province occur in mines beneath stream valleys, yet surface  topography is not commonly taken quantitatively into account when planning  underground excavations. Roof collapse has been studied for over a century,  with resulting standard practices for dealing with roof instabilities based on  empirical or back-of the envelope calculations.   For practical reasons, these practices  typically ignore the effects of stress perturbations due to topographic relief at  the earth&rsquo;s surface. Pre-existing geologic structures such as faults, joints,  and buried stream channels may also cause stress perturbations and/or form  surfaces of weakness. Such geologic structures are frequently accounted for,  although often only qualitatively or empirically. In this investigation, the  heterogeneous stress field induced at the scale of an individual mine by the  interaction of topography and tectonic stresses is being modeled using the  Boundary Element Method, with a long-range goal of developing a user-friendly  software package specially designed for mining engineers to evaluate  heterogeneous stress fields before and after mine excavation.</p>
+</div>
+<figure>
+<img src="../images/research/nioh.jpg" width="680"/>
+<figcaption></figcaption>
+</figure>
+
+
+<!--
+<p>A newly developed interest since moving to Akron is the stability of underground excavations, with emphasis on roof stability in underground limestone and coal mines in eastern Ohio.  It turns out that structural geology is particularly important when characterizing failure potential in mines.  Structures inherited from past tectonic processes and sedimentary fabrics interact by present day stress perturbations caused by excavation in ways that are difficult to predict unless a complete structural analysis is done.  The picture is complicated somewhat in this case because perturbations caused by excavation cause the formation of new structures (mainly fractures) which may be difficult to differentiate from geologic structures.
+<<Photo of underground excavation>>
+</p>
+
+<h2>Collaborators:</h2>
+<p style="text-indent:0">Tim Miller (East Fairfield Coal Company), Ernian Pan (University of Akron)</p>
+
+-->
